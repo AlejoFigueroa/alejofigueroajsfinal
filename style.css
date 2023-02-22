@@ -1,0 +1,161 @@
+/*productos card*/
+body{
+    background-color: rgb(128, 50, 50);
+    margin: 0px;
+}
+.titulo{
+    color: #fff;
+    text-align: center;
+}
+.nav-container{
+    position: sticky;
+    z-index: 3;
+    top: 0;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    height: 12vh;
+    background-color: bisque;
+}
+
+.navbar-logo{
+    justify-self: start;
+    margin-left: 20px;
+    margin-top: 4vh;
+    cursor: pointer;
+}
+
+.ver-carrito{
+    font-size: 25px;
+    margin-right: 20px;
+    margin-top: 3.5vh;
+    cursor: pointer;
+}
+/*
+.shop-content{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    margin-left: 90px;
+    margin-right: 80px;
+}
+
+/*product cards*/
+
+.shop-content{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top:  110px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.card{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    width: 300px;
+    margin: auto;
+    text-align: center;
+    font-family: Arial;
+    color: rgb(15, 17, 17);
+    background-color: bisque;
+    border-radius: 20px;
+
+}
+
+.card > img{
+    width: 90%;
+    height: 250%;
+}
+
+.price{
+    color:rgb(6, 7, 7);
+    font-size: 22px;
+    border-radius: 20px;
+}
+
+.card button{
+    border: none;
+    outline: 0;
+    padding: 12px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+}
+
+.card button:hover{
+    opacity: 0.7;
+}
+
+/*modal content*/
+
+.modal-container{
+    width: 80%;
+    margin: 0 10%;
+    max-width: 88vh;
+    color: #fff;
+    background-color: #000;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    position: fixed;
+    overflow: auto;
+    z-index: 9;
+    top: 12vh;
+    scrollbar-color: none;
+}
+
+.modal-container::-webkit-scrollbar{
+    display: none;
+}
+
+.modal-header-title{
+    justify-self: left;
+}
+
+.modal-header-button{
+    cursor: pointer;
+}
+
+.modal-container > .modal-content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 70%;
+    margin: 10px;
+}
+
+.modal-container > div > img {
+    height: 120px;
+    width: 120px;
+}
+
+.total-content{
+    font-size: 25px;
+    padding: 20px;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.delete-product{
+    cursor: pointer;
+}
+
+.cantidad-carrito{
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    font-size: 12px;
+    padding: 4px;
+    top: 37px;
+    right: 14px;
+    position: absolute;
+    display: none;
+}
